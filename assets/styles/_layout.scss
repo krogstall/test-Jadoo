@@ -71,6 +71,7 @@ header{
 
 	&__description{
 		max-width: 550px;
+		flex-shrink: 0;
 	}
 
 	&__subtitle{
@@ -218,9 +219,13 @@ header{
     min-width: 80px;
     padding: 0 20px 0 16px;
     outline: none;
+    -webkit-appearance: none;
+    position: absolute;
   }
+
   label {
-    position:relative
+    position:relative;
+    display: block;
   }
 
   label:after {
